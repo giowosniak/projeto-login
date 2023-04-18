@@ -31,15 +31,16 @@ section#login {
     top: 50%;
     left: 50%;
     overflow: hidden;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.475);
 
+    transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+    
 }
 
 section#login > div#imagem {
@@ -55,4 +56,92 @@ section#login > div#formulario {
     display: block;
     padding: 10px;
 
+}
+
+#formulario h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 1em;    
+}
+
+#formulario p {
+    font-size: 0.8em;
+    margin: 10px 0px;
+}
+
+div.campo {
+    background-color: var(--lilas);
+    border: 2px solid var(--lilas);
+    border-radius: 8px;
+    margin: 5px 0px;
+    height: 40px;
+    
+}
+
+div.campo span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    height: 100%;
+    width: calc(100% - 44px);
+    border-radius: 8px;
+    padding: 4px;
+    background-color: #5dc7c3 ;
+    border: none;
+    font-size: 1em;
+    font-weight: bolder;
+    text-indent: 8px;
+    letter-spacing: 1px;
+    transform: translateY(-13.5px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+form > input[type=submit] {
+    background-color: var(--verde);
+    font-size: 1em;
+    width: 100%;
+    display: block;
+    border: 1px solid var(--verde);
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: .8px;
+    cursor: pointer;
+    
+}
+
+form > input[type=submit]:hover {
+    background-color: #347270;
+}
+
+form a.botao {
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    border: 1px solid var(--verde);
+    text-align: center;
+    padding: 10px;
+    color: rgb(1, 95, 1);
+    border-radius: 5px;
+}
+
+form a.botao:hover {
+    background-color: rgb(114, 219, 184);
+}
+
+
+form > a.botao > span {
+    font-size: 1em;
+    padding-left: 5px;
+   
 }
